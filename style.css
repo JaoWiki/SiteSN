@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@keyframes changeOpacity {
+    0% {
+        opacity: 10%;
+      }
+      50% {
+        opacity: 50%;
+      }
+      100% {
+        opacity: 100%;
+      }
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+      background-color: #27B331;
+    }
+    50% {
+        background-color:  #B50E0E;
+    }
+    
+    100% {
+        background-color: #27B331;
+    }
+}
+
+    
+:root {
+    --corS: #2DE05A
+    --corN: #FF221F
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    animation: changeBackgroundColor 7s infinite;
+    
+    
+}
+
+header {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header > img {
+    min-width: 100px;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    animation: changeOpacity 2s;
+    
+}
+
+div {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    animation: changeOpacity 3s;
+    
+    
+}
+
+div:active {
+        transform: translateY(4px);
+}
+
+
+
+
+
+
+
